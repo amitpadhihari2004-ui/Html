@@ -1,0 +1,122 @@
+<abbr title="HyperText Markup Language">HTML</abbr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Table</title>
+
+    <!-- External or Internal CSS -->
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px gray;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        thead {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e8f5e9;
+        }
+
+        tbody tr:hover {
+            background-color: #dcedc8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Examination Result</h1>
+
+    <table border="2" cellpadding="10" cellspacing="5" align="center">
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Roll No</th>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Subjects</th>
+                <th rowspan="2">Total</th>
+            </tr>
+            <tr>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>85</td>
+                <td>90</td>
+                <td>80</td>
+                <td>255</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Rohan</td>
+                <td>78</td>
+                <td>82</td>
+                <td>88</td>
+                <td>248</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Shubham</td>
+                <td>92</td>
+                <td>95</td>
+                <td>89</td>
+                <td>276</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Amit</td>
+                <td>70</td>
+                <td>75</td>
+                <td>80</td>
+                <td>225</td>
+            </tr>
+        </tbody>
+
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="5" align="right">Average Marks</td>
+                <td>251</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p style="font-size: 18px; color: #333;">This table displays the results of students with subject-wise marks and total scores.</p>
+</body>
+</html>
